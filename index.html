@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1 - स्वराज का उदय</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #e0e5ec; --shadow-light: #ffffff; --shadow-dark: #a3b1c6; --orange: #FF4500; }
+        body { background: var(--bg); font-family: 'Poppins', sans-serif; display: flex; justify-content: center; padding: 20px; }
+        .container { max-width: 600px; background: var(--bg); padding: 40px; border-radius: 40px; box-shadow: 20px 20px 60px var(--shadow-dark), -20px -20px 60px var(--shadow-light); text-align: center; }
+        
+        /* 4x4 Photo Frame Style */
+        .photo-frame {
+            width: 280px; height: 280px; /* 4x4 Aspect Ratio */
+            margin: 0 auto 30px;
+            background: var(--bg);
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 12px 12px 24px var(--shadow-dark), -12px -12px 24px var(--shadow-light);
+            display: flex; align-items: center; justify-content: center;
+        }
+        .photo-frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; border: 2px solid rgba(255,255,255,0.5); }
+
+        h1 { color: var(--orange); font-size: 2rem; margin-bottom: 10px; }
+        .story-text { 
+            background: var(--bg); padding: 30px; border-radius: 25px; 
+            box-shadow: inset 8px 8px 16px var(--shadow-dark), inset -8px -8px 16px var(--shadow-light);
+            text-align: justify; line-height: 1.9; font-size: 1.1rem; color: #333;
+        }
+        .btn-next {
+            display: inline-block; margin-top: 30px; padding: 15px 45px; border-radius: 50px;
+            background: var(--bg); text-decoration: none; color: var(--orange); font-weight: bold;
+            box-shadow: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
+        }
+        .btn-next:active { box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light); }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="photo-frame">
+        <img src="shivaji_childhood.jpg" alt="Shivaji Maharaj">
+    </div>
+    <h1>अध्याय 1: बाल्यकाल और शपथ</h1>
+    <div class="story-text">
+        19 फरवरी 1630, शिवनेरी दुर्ग की हवाओं में एक अलग ही गूँज थी। जीजाबाई के आँचल में पले शिवाजी ने बचपन से ही महलों के ऐश्वर्य को ठुकराकर सह्याद्रि की चट्टानों को अपना साथी बनाया। जब उनकी उम्र के अन्य बालक खेल-कूद में व्यस्त थे, तब शिवा अपने मावलों के साथ किलों की बनावट और छापामार युद्ध की रणनीतियाँ समझ रहे थे। माता जीजाबाई ने उन्हें रामायण और महाभारत के पात्रों से रूबरू कराया, जिससे उनके भीतर धर्म और न्याय की ज्वाला प्रज्वलित हुई। 16 साल की नन्हीं उम्र में, रायरेश्वर मंदिर के गर्भगृह में अपनी उंगली काटकर शिवलिंग पर रक्त का अभिषेक करते हुए उन्होंने 'हिंदवी स्वराज' की कसम खाई। यह केवल एक शपथ नहीं थी, बल्कि आने वाले महातूफान का आगाज़ था।
+    </div>
+    <a href="chapter2.html" class="btn-next">अध्याय 2: सिंह की दहाड़ →</a>
+</div>
+</body>
+</html>
