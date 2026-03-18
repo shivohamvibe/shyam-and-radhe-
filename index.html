@@ -4,48 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 1 - स्वराज का उदय</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Mukta:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root { --bg: #e0e5ec; --shadow-light: #ffffff; --shadow-dark: #a3b1c6; --orange: #FF4500; }
-        body { background: var(--bg); font-family: 'Poppins', sans-serif; display: flex; justify-content: center; padding: 20px; }
-        .container { max-width: 600px; background: var(--bg); padding: 40px; border-radius: 40px; box-shadow: 20px 20px 60px var(--shadow-dark), -20px -20px 60px var(--shadow-light); text-align: center; }
-        
-        /* 4x4 Photo Frame Style */
-        .photo-frame {
-            width: 280px; height: 280px; /* 4x4 Aspect Ratio */
-            margin: 0 auto 30px;
-            background: var(--bg);
-            padding: 15px;
-            border-radius: 20px;
-            box-shadow: 12px 12px 24px var(--shadow-dark), -12px -12px 24px var(--shadow-light);
-            display: flex; align-items: center; justify-content: center;
-        }
-        .photo-frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; border: 2px solid rgba(255,255,255,0.5); }
-
-        h1 { color: var(--orange); font-size: 2rem; margin-bottom: 10px; }
-        .story-text { 
-            background: var(--bg); padding: 30px; border-radius: 25px; 
-            box-shadow: inset 8px 8px 16px var(--shadow-dark), inset -8px -8px 16px var(--shadow-light);
-            text-align: justify; line-height: 1.9; font-size: 1.1rem; color: #333;
-        }
-        .btn-next {
-            display: inline-block; margin-top: 30px; padding: 15px 45px; border-radius: 50px;
-            background: var(--bg); text-decoration: none; color: var(--orange); font-weight: bold;
-            box-shadow: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
-        }
-        .btn-next:active { box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light); }
+        :root { --bg: #e0e5ec; --shadow-light: #ffffff; --shadow-dark: #a3b1c6; --orange: #FF4500; --text-color: #333; }
+        [data-theme="dark"] { --bg: #1a1c20; --shadow-light: #25282d; --shadow-dark: #0f1013; --text-color: #d1d1d1; --orange: #ff6347; }
+        body { background: var(--bg); font-family: 'Poppins', sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; transition: 0.4s; }
+        .theme-switch { align-self: flex-end; margin-bottom: 20px; padding: 10px 20px; border-radius: 30px; background: var(--bg); box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light); cursor: pointer; border: none; color: var(--text-color); font-weight: bold; }
+        .container { max-width: 650px; background: var(--bg); padding: 40px; border-radius: 40px; box-shadow: 20px 20px 60px var(--shadow-dark), -20px -20px 60px var(--shadow-light); text-align: center; }
+        .photo-frame { width: 250px; height: 250px; background: var(--bg); padding: 12px; border-radius: 20px; box-shadow: 10px 10px 20px var(--shadow-dark), -10px -10px 20px var(--shadow-light); margin: 20px auto; display: flex; align-items: center; justify-content: center; }
+        .photo-frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+        h1 { color: var(--orange); font-size: 2.2rem; margin-bottom: 15px; font-family: 'Mukta', sans-serif; }
+        .story-content { background: var(--bg); padding: 25px; border-radius: 30px; box-shadow: inset 8px 8px 16px var(--shadow-dark), inset -8px -8px 16px var(--shadow-light); text-align: justify; line-height: 2; font-size: 1.15rem; color: var(--text-color); font-family: 'Mukta', sans-serif; }
+        .btn-next { display: inline-block; margin-top: 35px; padding: 18px 50px; border-radius: 50px; background: var(--bg); text-decoration: none; color: var(--orange); font-weight: bold; box-shadow: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light); }
     </style>
 </head>
 <body>
+<button class="theme-switch" onclick="toggleTheme()">🌓 मोड बदलें</button>
 <div class="container">
-    <div class="photo-frame">
-        <img src="shivaji_childhood.jpg" alt="Shivaji Maharaj">
-    </div>
-    <h1>अध्याय 1: बाल्यकाल और शपथ</h1>
-    <div class="story-text">
-        19 फरवरी 1630, शिवनेरी दुर्ग की हवाओं में एक अलग ही गूँज थी। जीजाबाई के आँचल में पले शिवाजी ने बचपन से ही महलों के ऐश्वर्य को ठुकराकर सह्याद्रि की चट्टानों को अपना साथी बनाया। जब उनकी उम्र के अन्य बालक खेल-कूद में व्यस्त थे, तब शिवा अपने मावलों के साथ किलों की बनावट और छापामार युद्ध की रणनीतियाँ समझ रहे थे। माता जीजाबाई ने उन्हें रामायण और महाभारत के पात्रों से रूबरू कराया, जिससे उनके भीतर धर्म और न्याय की ज्वाला प्रज्वलित हुई। 16 साल की नन्हीं उम्र में, रायरेश्वर मंदिर के गर्भगृह में अपनी उंगली काटकर शिवलिंग पर रक्त का अभिषेक करते हुए उन्होंने 'हिंदवी स्वराज' की कसम खाई। यह केवल एक शपथ नहीं थी, बल्कि आने वाले महातूफान का आगाज़ था।
+    <h1>अध्याय 1: बाल्यकाल और धर्म-संकल्प</h1>
+    <div class="story-content">
+        <div class="photo-frame"><img src="shivaji_birth.jpg" alt="जन्म"></div>
+        19 फरवरी 1630, जब शिवनेरी दुर्ग की हवाओं ने सह्याद्रि की गूँज के साथ एक महानायक का स्वागत किया। माता जीजाबाई के संस्कारों ने बालक शिवा के कोमल मन में स्वराज की ज्वाला जला दी थी। जहाँ अन्य राजकुमार भोग-विलास में व्यस्त थे, वहीं शिवा अपने वफादार मावलों के साथ गुप्त रास्तों और किलों की अभेद्य रणनीति बुन रहे थे।
+        <div class="photo-frame"><img src="shivaji_oath.jpg" alt="शपथ"></div>
+        रामायण-महाभारत की शौर्य गाथाओं ने उनके भीतर 'न्याय' की परिभाषा को स्पष्ट किया। मात्र 16 वर्ष की आयु में, रायरेश्वर के पवित्र मंदिर में अपने रक्त से महादेव का अभिषेक करते हुए, उन्होंने दासता की बेड़ियाँ तोड़ने की भीषण प्रतिज्ञा की। यह सिर्फ एक शपथ नहीं थी, बल्कि गुलामी के अंधेरे में जलती हुई 'हिंदवी स्वराज' की मशाल थी।
     </div>
     <a href="chapter2.html" class="btn-next">अध्याय 2: सिंह की दहाड़ →</a>
 </div>
+<script>function toggleTheme(){document.body.hasAttribute('data-theme')?document.body.removeAttribute('data-theme'):document.body.setAttribute('data-theme','dark');}</script>
 </body>
 </html>
